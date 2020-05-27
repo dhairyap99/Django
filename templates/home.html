@@ -4,9 +4,10 @@
 
 <h1>Hello {{name}} !!!!</h1>
 <form action="add" method="POST">
-
-    <!--{% csrf_token %}-->
     
+    <!--CSRF verification failed. Request aborted. So we fix it in this way-->
+    {% csrf_token %}
+
     Enter first number: <input type="number" name="num1">
     Enter second number: <input type="number" name="num2">
     <br><br>
