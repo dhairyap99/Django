@@ -5,7 +5,8 @@ from .models import Destination
 
 def index(request):
 
-    dest1 = Destination()    
+    #Times when we passed data from our model
+    '''dest1 = Destination()    
     dest1.name = 'Bali'
     dest1.desc = 'The land of something for everyone'
     dest1.img = 'destination_1.jpg'
@@ -45,8 +46,8 @@ def index(request):
     dest6.desc = 'Dance, drink, never sleep'
     dest6.img = 'destination_6.jpg'
     dest6.price = 600
-    dest6.offer = False
+    dest6.offer = False'''
 
-    dests = [dest1, dest2, dest3, dest4, dest5, dest6]
+    dests = Destination.objects.all()
   
     return render(request, 'index.html', {'dests': dests})
