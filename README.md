@@ -2,7 +2,7 @@
 
 ### Overview
 
-A simple webpage built using Django framework that displays data on the webpage dynamically from postgres database and has registration, login, logout and necessary authentication fields.
+A simple webpage built using Django framework that displays data on the webpage dynamically from postgres database and has registration, login, logout (all using the same database) with necessary authentication approvals.
 
 
 ### *Edits:*
